@@ -9,7 +9,7 @@
   services.openssh.enable = true;
   users.users = {
     root.password = "default";
-    matthew = {
+    ajlennon = {
       isNormalUser = true;
       password = "default";
       extraGroups = [
@@ -21,4 +21,5 @@
       ];
     };
   };
+  mobile.quirks.wifi.disableMacAddressRandomization = true;
 }
