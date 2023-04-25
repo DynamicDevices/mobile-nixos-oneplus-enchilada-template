@@ -44,7 +44,7 @@
             diskSize = 80 * 1024;
             writableStoreUseTmpfs = false;
           };
-          nixos-shell.mounts.mountHome = false;
+          nixos-shell.mounts.mountHome = true;
           boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
           boot.kernelPackages = pkgs.linuxPackages_latest;
           environment.systemPackages = with pkgs; [
